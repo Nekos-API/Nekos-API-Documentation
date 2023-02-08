@@ -2005,6 +2005,67 @@
 					"response": []
 				},
 				{
+					"name": "Get users who liked an image",
+					"id": "abf3d6c1-b206-4ef5-a1dc-20ec704cd3af",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/liked-by",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"liked-by"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an image's liked-by relationship",
+					"id": "3d67f40b-4390-41ff-9174-57888cc3340f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/relationships/liked-by",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"relationships",
+								"liked-by"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Like an image",
 					"id": "f5e634c2-68bd-440b-82c5-914cd3e13e91",
 					"protocolProfileBehavior": {
