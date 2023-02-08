@@ -1757,6 +1757,104 @@
 				}
 			],
 			"id": "cc100081-7769-44ef-8481-ea1774f41e12"
+		},
+		{
+			"name": "Get API details",
+			"id": "dacf8d6c-6403-43bd-b3e1-1c7a94df2b57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}",
+					"host": [
+						"{{BASE_URL}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e94da9c4-6cb6-4e10-9a9d-fa4ba6ee176a",
+					"name": "Get API details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}",
+							"host": [
+								"{{BASE_URL}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 04:28:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/vnd.api+json"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1906"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Authorization"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"type\": \"api-metadata\",\n        \"id\": \"1\",\n        \"attributes\": {\n            \"endpoints\": [\n                \"/v2\",\n                \"/v2/images\",\n                \"/v2/images/:id\",\n                \"/v2/images/:id/like\",\n                \"/v2/images/:id/save\",\n                \"/v2/images/:id/artist\",\n                \"/v2/images/:id/liked-by\",\n                \"/v2/images/:id/categories\",\n                \"/v2/images/:id/characters\",\n                \"/v2/images/:id/relationships/artist\",\n                \"/v2/images/:id/relationships/liked-by\",\n                \"/v2/images/:id/relationships/categories\",\n                \"/v2/images/:id/relationships/characters\",\n                \"/v2/artists\",\n                \"/v2/artists/:id\",\n                \"/v2/artists/:id/images\",\n                \"/v2/artists/:id/follow\",\n                \"/v2/artists/:id/followers\",\n                \"/v2/artists/:id/relationships/images\",\n                \"/v2/artists/:id/relationships/followers\",\n                \"/v2/categories\",\n                \"/v2/categories/:id\",\n                \"/v2/categories/:id/images\",\n                \"/v2/categories/:id/follow\",\n                \"/v2/categories/:id/followers\",\n                \"/v2/categories/:id/relationships/images\",\n                \"/v2/categories/:id/relationships/followers\",\n                \"/v2/characters\",\n                \"/v2/characters/:id\",\n                \"/v2/characters/:id/images\",\n                \"/v2/characters/:id/follow\",\n                \"/v2/characters/:id/followers\",\n                \"/v2/characters/:id/relationships/images\",\n                \"/v2/characters/:id/relationships/followers\",\n                \"/v2/lists\",\n                \"/v2/lists/:id\",\n                \"/v2/lists/:id/user\",\n                \"/v2/lists/:id/images\",\n                \"/v2/lists/:id/followers\",\n                \"/v2/lists/:id/relationships/user\",\n                \"/v2/lists/:id/relationships/images\",\n                \"/v2/lists/:id/relationships/followers\",\n                \"/v2/users\",\n                \"/v2/users/@me\",\n                \"/v2/users/:id\",\n                \"/v2/users/:id/follow\",\n                \"/v2/users/:id/followers\",\n                \"/v2/users/:id/following\",\n                \"/v2/users/:id/liked-images\",\n                \"/v2/users/:id/saved-images\",\n                \"/v2/users/:id/followed-artists\",\n                \"/v2/users/:id/followed-characters\",\n                \"/v2/users/:id/followed-categories\",\n                \"/v2/users/:id/relationships/followers\",\n                \"/v2/users/:id/relationships/following\",\n                \"/v2/users/:id/relationships/liked-images\",\n                \"/v2/users/:id/relationships/saved-images\",\n                \"/v2/users/:id/relationships/followed-artists\",\n                \"/v2/users/:id/relationships/followed-characters\",\n                \"/v2/users/:id/relationships/followed-categories\",\n                \"/v2/auth/token\",\n                \"/v2/auth/token/revoke\"\n            ],\n            \"apiVersion\": \"2.0.0-Alpha\"\n        }\n    }\n}"
+				}
+			]
 		}
 	],
 	"auth": {
