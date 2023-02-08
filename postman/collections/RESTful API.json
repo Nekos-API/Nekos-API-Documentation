@@ -456,11 +456,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{BASE_URL}}/images?page[limit]=1",
+									"raw": "http://localhost:8000/v2/images?page[limit]=1",
+									"protocol": "http",
 									"host": [
-										"{{BASE_URL}}"
+										"localhost"
 									],
+									"port": "8000",
 									"path": [
+										"v2",
 										"images"
 									],
 									"query": [
@@ -1784,7 +1787,8 @@
 					"host": [
 						"{{BASE_URL}}"
 					]
-				}
+				},
+				"description": "This endpoint returns some details about the API, such as the API version and all the endpoints."
 			},
 			"response": [
 				{
@@ -1800,9 +1804,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{BASE_URL}}",
+							"raw": "http://localhost:8000/v2",
+							"protocol": "http",
 							"host": [
-								"{{BASE_URL}}"
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"v2"
 							]
 						}
 					},
@@ -1852,7 +1861,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"type\": \"api-metadata\",\n        \"id\": \"1\",\n        \"attributes\": {\n            \"endpoints\": [\n                \"/v2\",\n                \"/v2/images\",\n                \"/v2/images/:id\",\n                \"/v2/images/:id/like\",\n                \"/v2/images/:id/save\",\n                \"/v2/images/:id/artist\",\n                \"/v2/images/:id/liked-by\",\n                \"/v2/images/:id/categories\",\n                \"/v2/images/:id/characters\",\n                \"/v2/images/:id/relationships/artist\",\n                \"/v2/images/:id/relationships/liked-by\",\n                \"/v2/images/:id/relationships/categories\",\n                \"/v2/images/:id/relationships/characters\",\n                \"/v2/artists\",\n                \"/v2/artists/:id\",\n                \"/v2/artists/:id/images\",\n                \"/v2/artists/:id/follow\",\n                \"/v2/artists/:id/followers\",\n                \"/v2/artists/:id/relationships/images\",\n                \"/v2/artists/:id/relationships/followers\",\n                \"/v2/categories\",\n                \"/v2/categories/:id\",\n                \"/v2/categories/:id/images\",\n                \"/v2/categories/:id/follow\",\n                \"/v2/categories/:id/followers\",\n                \"/v2/categories/:id/relationships/images\",\n                \"/v2/categories/:id/relationships/followers\",\n                \"/v2/characters\",\n                \"/v2/characters/:id\",\n                \"/v2/characters/:id/images\",\n                \"/v2/characters/:id/follow\",\n                \"/v2/characters/:id/followers\",\n                \"/v2/characters/:id/relationships/images\",\n                \"/v2/characters/:id/relationships/followers\",\n                \"/v2/lists\",\n                \"/v2/lists/:id\",\n                \"/v2/lists/:id/user\",\n                \"/v2/lists/:id/images\",\n                \"/v2/lists/:id/followers\",\n                \"/v2/lists/:id/relationships/user\",\n                \"/v2/lists/:id/relationships/images\",\n                \"/v2/lists/:id/relationships/followers\",\n                \"/v2/users\",\n                \"/v2/users/@me\",\n                \"/v2/users/:id\",\n                \"/v2/users/:id/follow\",\n                \"/v2/users/:id/followers\",\n                \"/v2/users/:id/following\",\n                \"/v2/users/:id/liked-images\",\n                \"/v2/users/:id/saved-images\",\n                \"/v2/users/:id/followed-artists\",\n                \"/v2/users/:id/followed-characters\",\n                \"/v2/users/:id/followed-categories\",\n                \"/v2/users/:id/relationships/followers\",\n                \"/v2/users/:id/relationships/following\",\n                \"/v2/users/:id/relationships/liked-images\",\n                \"/v2/users/:id/relationships/saved-images\",\n                \"/v2/users/:id/relationships/followed-artists\",\n                \"/v2/users/:id/relationships/followed-characters\",\n                \"/v2/users/:id/relationships/followed-categories\",\n                \"/v2/auth/token\",\n                \"/v2/auth/token/revoke\"\n            ],\n            \"apiVersion\": \"2.0.0-Alpha\"\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"type\": \"api-details\",\n        \"id\": \"1\",\n        \"attributes\": {\n            \"endpoints\": [\n                \"/v2\",\n                \"/v2/images\",\n                \"/v2/images/:id\",\n                \"/v2/images/:id/like\",\n                \"/v2/images/:id/save\",\n                \"/v2/images/:id/artist\",\n                \"/v2/images/:id/liked-by\",\n                \"/v2/images/:id/categories\",\n                \"/v2/images/:id/characters\",\n                \"/v2/images/:id/relationships/artist\",\n                \"/v2/images/:id/relationships/liked-by\",\n                \"/v2/images/:id/relationships/categories\",\n                \"/v2/images/:id/relationships/characters\",\n                \"/v2/artists\",\n                \"/v2/artists/:id\",\n                \"/v2/artists/:id/images\",\n                \"/v2/artists/:id/follow\",\n                \"/v2/artists/:id/followers\",\n                \"/v2/artists/:id/relationships/images\",\n                \"/v2/artists/:id/relationships/followers\",\n                \"/v2/categories\",\n                \"/v2/categories/:id\",\n                \"/v2/categories/:id/images\",\n                \"/v2/categories/:id/follow\",\n                \"/v2/categories/:id/followers\",\n                \"/v2/categories/:id/relationships/images\",\n                \"/v2/categories/:id/relationships/followers\",\n                \"/v2/characters\",\n                \"/v2/characters/:id\",\n                \"/v2/characters/:id/images\",\n                \"/v2/characters/:id/follow\",\n                \"/v2/characters/:id/followers\",\n                \"/v2/characters/:id/relationships/images\",\n                \"/v2/characters/:id/relationships/followers\",\n                \"/v2/lists\",\n                \"/v2/lists/:id\",\n                \"/v2/lists/:id/user\",\n                \"/v2/lists/:id/images\",\n                \"/v2/lists/:id/followers\",\n                \"/v2/lists/:id/relationships/user\",\n                \"/v2/lists/:id/relationships/images\",\n                \"/v2/lists/:id/relationships/followers\",\n                \"/v2/users\",\n                \"/v2/users/@me\",\n                \"/v2/users/:id\",\n                \"/v2/users/:id/follow\",\n                \"/v2/users/:id/followers\",\n                \"/v2/users/:id/following\",\n                \"/v2/users/:id/liked-images\",\n                \"/v2/users/:id/saved-images\",\n                \"/v2/users/:id/followed-artists\",\n                \"/v2/users/:id/followed-characters\",\n                \"/v2/users/:id/followed-categories\",\n                \"/v2/users/:id/relationships/followers\",\n                \"/v2/users/:id/relationships/following\",\n                \"/v2/users/:id/relationships/liked-images\",\n                \"/v2/users/:id/relationships/saved-images\",\n                \"/v2/users/:id/relationships/followed-artists\",\n                \"/v2/users/:id/relationships/followed-characters\",\n                \"/v2/users/:id/relationships/followed-categories\",\n                \"/v2/auth/token\",\n                \"/v2/auth/token/revoke\"\n            ],\n            \"apiVersion\": \"2.0.0-Alpha\"\n        }\n    }\n}"
 				}
 			]
 		}
