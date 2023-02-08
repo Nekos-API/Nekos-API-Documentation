@@ -1943,6 +1943,150 @@
 							"body": "{\n    \"data\": {\n        \"type\": \"image\",\n        \"id\": \"cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0\",\n        \"attributes\": {\n            \"file\": \"https://cdn.nekosapi.com/uploads/images/4RJEIO5TYBCZ3FVNEV7G3J6XVM.webp\",\n            \"title\": \"Categirl with white dress\",\n            \"colors\": {\n                \"primary\": null,\n                \"dominant\": null\n            },\n            \"source\": {\n                \"name\": null,\n                \"url\": null\n            },\n            \"dimens\": {\n                \"height\": 0,\n                \"width\": 0,\n                \"aspectRatio\": null\n            },\n            \"isOriginal\": false,\n            \"isVerified\": false,\n            \"ageRating\": \"sfw\",\n            \"timestamps\": {\n                \"created\": \"2023-01-26T05:39:20.717117Z\",\n                \"updated\": \"2023-02-02T19:50:41.305832Z\"\n            }\n        },\n        \"relationships\": {\n            \"uploader\": {\n                \"links\": {\n                    \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/relationships/uploader\",\n                    \"related\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/uploader\"\n                },\n                \"data\": {\n                    \"type\": \"user\",\n                    \"id\": \"8fad93cd-4a9c-4e71-b21f-6eb4efebb3db\"\n                }\n            },\n            \"artist\": {\n                \"links\": {\n                    \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/relationships/artist\",\n                    \"related\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/artist\"\n                },\n                \"data\": {\n                    \"type\": \"artist\",\n                    \"id\": \"500c5ecf-8d83-4333-8f0f-207941aaa552\"\n                }\n            },\n            \"categories\": {\n                \"meta\": {\n                    \"count\": 1\n                },\n                \"data\": [\n                    {\n                        \"type\": \"category\",\n                        \"id\": \"60304e04-6b0b-4930-a3dc-ba8d9e36d160\"\n                    }\n                ],\n                \"links\": {\n                    \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/relationships/categories\",\n                    \"related\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/categories\"\n                }\n            },\n            \"characters\": {\n                \"meta\": {\n                    \"count\": 1\n                },\n                \"data\": [\n                    {\n                        \"type\": \"character\",\n                        \"id\": \"6106713f-2275-4208-be91-bcba1fabbbad\"\n                    }\n                ],\n                \"links\": {\n                    \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/relationships/characters\",\n                    \"related\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/characters\"\n                }\n            },\n            \"likedBy\": {\n                \"meta\": {\n                    \"count\": 0\n                },\n                \"data\": [],\n                \"links\": {\n                    \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/relationships/liked-by\",\n                    \"related\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0/liked-by\"\n                }\n            }\n        },\n        \"links\": {\n            \"self\": \"https://api.nekosapi.com/v2/images/cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0\"\n        }\n    },\n    \"included\": [\n        {\n            \"type\": \"user\",\n            \"id\": \"8fad93cd-4a9c-4e71-b21f-6eb4efebb3db\",\n            \"attributes\": {\n                \"username\": \"Nekidev\",\n                \"nickname\": null,\n                \"biography\": null,\n                \"avatarImage\": \"https://cdn.nekosapi.com/uploads/user/avatar/GECDUAPVVRGVJHW5ESJTHXFRMU.webp\",\n                \"timestamps\": {\n                    \"joined\": \"2023-01-29T09:04:52Z\"\n                },\n                \"permissions\": {\n                    \"isActive\": true,\n                    \"isStaff\": true,\n                    \"isSuperuser\": true\n                }\n            },\n            \"relationships\": {\n                \"following\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/following\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/following\"\n                    }\n                },\n                \"followers\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/followers\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/followers\"\n                    }\n                },\n                \"followedArtists\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/followed-artists\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/followed-artists\"\n                    }\n                },\n                \"followedCharacters\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/followed-characters\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/followed-characters\"\n                    }\n                },\n                \"followedCategories\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/followed-categories\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/followed-categories\"\n                    }\n                },\n                \"followedLists\": {\n                    \"links\": {\n                        \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/relationships/followed-lists\",\n                        \"related\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db/followed-lists\"\n                    }\n                }\n            },\n            \"links\": {\n                \"self\": \"https://api.nekosapi.com/v2/users/8fad93cd-4a9c-4e71-b21f-6eb4efebb3db\"\n            }\n        }\n    ]\n}"
 						}
 					]
+				},
+				{
+					"name": "Like an image",
+					"id": "f5e634c2-68bd-440b-82c5-914cd3e13e91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/like",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"like"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove like from an image",
+					"id": "a60f4028-a8a1-41d0-aa68-b4eb5523e527",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/like",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"like"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save an image",
+					"id": "0bbe9a22-9078-4d0e-9dd3-d7d5ba868155",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/save",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"save"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove image from saved images",
+					"id": "2415a416-7816-4590-a24f-17b7c7d76543",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/save",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"save"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "cc100081-7769-44ef-8481-ea1774f41e12"
