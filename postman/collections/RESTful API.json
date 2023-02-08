@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "bfd6d329-a020-486a-aaa8-c53b33e9aa85",
+		"name": "RESTful API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "19757005-bfd6d329-a020-486a-aaa8-c53b33e9aa85"
+	},
+	"item": [
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Get all images",
+					"id": "459d2c67-e31b-456d-8e7a-23640059e901",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/images?sort=createdAt,updatedAt,height,width,ageRating,title,isOriginal,isVerified&included=uploader,characters,categories,liked-by&page[limit]=10&page[offset]=0&filter[id]=af52a61b-843c-481e-a173-ad31eedaa68e&filter[id.in]=af52a61b-843c-481e-a173-ad31eedaa68e,fa216a8e-9bab-4d14-b079-5b30db2b18bd&filter[ageRating]=sfw&filter[ageRating.exact]=sfw&filter[ageRating.in]=sfw,questionable,borderline,nsfw&filter[height]=2000&filter[height.lt]=2000&filter[height.lte]=2000&filter[height.gt]=2000&filter[height.gte]=2000&filter[width]=2000&filter[width.lt]=2000&filter[width.lte]=2000&filter[width.gt]=2000&filter[width.gte]=2000",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "createdAt,updatedAt,height,width,ageRating,title,isOriginal,isVerified",
+									"description": "The order in which the items will be returned. Prepend a - character to an item to inverse the sort order (for that item)."
+								},
+								{
+									"key": "included",
+									"value": "uploader,characters,categories,liked-by",
+									"description": "The included resources."
+								},
+								{
+									"key": "page[limit]",
+									"value": "10",
+									"description": "The amount of items returned per page."
+								},
+								{
+									"key": "page[offset]",
+									"value": "0",
+									"description": "The amount of items to skip."
+								},
+								{
+									"key": "filter[id]",
+									"value": "af52a61b-843c-481e-a173-ad31eedaa68e",
+									"description": "Filter for an image with this exact ID. Is preferable to use the `Get image by ID` endpoint instead of using this filter."
+								},
+								{
+									"key": "filter[id.in]",
+									"value": "af52a61b-843c-481e-a173-ad31eedaa68e,fa216a8e-9bab-4d14-b079-5b30db2b18bd",
+									"description": "Returns the images for the IDs selected. As this parameter is a filter, no 404 error is returned if one or more IDs do not match any image."
+								},
+								{
+									"key": "filter[ageRating]",
+									"value": "sfw",
+									"description": "Returns images with the selected age rating (case-insensitive)."
+								},
+								{
+									"key": "filter[ageRating.exact]",
+									"value": "sfw",
+									"description": "Returns images with the selected age rating (case-sensitive)."
+								},
+								{
+									"key": "filter[ageRating.in]",
+									"value": "sfw,questionable,borderline,nsfw",
+									"description": "Returns images with any of the age ratings selected."
+								},
+								{
+									"key": "filter[height]",
+									"value": "2000",
+									"description": "Returns images with the specified height (in px)."
+								},
+								{
+									"key": "filter[height.lt]",
+									"value": "2000",
+									"description": "Returns images with a height lower than the one specified (in px)."
+								},
+								{
+									"key": "filter[height.lte]",
+									"value": "2000",
+									"description": "Returns images with a height equal or lower than what specified (in px)."
+								},
+								{
+									"key": "filter[height.gt]",
+									"value": "2000",
+									"description": "Returns images with a height greater than what specified (in px)."
+								},
+								{
+									"key": "filter[height.gte]",
+									"value": "2000",
+									"description": "Returns images with a height equal or greater than the one specified (in px)."
+								},
+								{
+									"key": "filter[width]",
+									"value": "2000",
+									"description": "Returns images with the specified width (in px)."
+								},
+								{
+									"key": "filter[width.lt]",
+									"value": "2000",
+									"description": "Returns images with a width lower than the one specified (in px).",
+									"type": "text"
+								},
+								{
+									"key": "filter[width.lte]",
+									"value": "2000",
+									"description": "Returns images with a width equal or lower than what specified (in px).",
+									"type": "text"
+								},
+								{
+									"key": "filter[width.gt]",
+									"value": "2000",
+									"description": "Returns images with a width greater than what specified (in px).",
+									"type": "text"
+								},
+								{
+									"key": "filter[width.gte]",
+									"value": "2000",
+									"description": "Returns images with a width equal or greater than the one specified (in px).",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "cc100081-7769-44ef-8481-ea1774f41e12"
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "scope",
+				"value": "read write groups",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{PASSWORD}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{USERNAME}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{CLIENT_SECRET}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{CLIENT_ID}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{BASE_URL}}/auth/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": false,
+				"type": "boolean"
+			},
+			{
+				"key": "tokenName",
+				"value": "Access Token",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe680883-66f7-4222-9b94-1f349ba6bf77",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "761b3f00-0031-405b-a9a7-ea6ae76e8c9f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "933f1a96-422c-4062-91f7-73372e5eeb09",
+			"key": "BASE_URL",
+			"value": "http://localhost:8000/v2",
+			"type": "string"
+		}
+	]
+}
