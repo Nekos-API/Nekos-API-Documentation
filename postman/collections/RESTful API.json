@@ -1945,6 +1945,66 @@
 					]
 				},
 				{
+					"name": "Get an image's artist",
+					"id": "9b2428f4-91ff-4634-a3b2-80efd9764fdd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/artist",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"artist"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd7ce8fd-ac01-4dd3-aa10-5f6344494ad0",
+									"description": "The image's ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an image's artist relationship",
+					"id": "ffb4d45d-9d4c-4641-8f06-4bb15a187739",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/images/:id/relationships/artist",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"images",
+								":id",
+								"relationships",
+								"artist"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Like an image",
 					"id": "f5e634c2-68bd-440b-82c5-914cd3e13e91",
 					"protocolProfileBehavior": {
