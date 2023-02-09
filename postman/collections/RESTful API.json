@@ -3373,6 +3373,203 @@
 			"name": "Users",
 			"item": [
 				{
+					"name": "Authorization",
+					"item": [
+						{
+							"name": "Get a token",
+							"id": "165648a0-fb31-44cc-9f94-a2f59c07994b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"description": "The type of the token grant. For user-owned applications, this parameter MUST always be `authorization_code`.",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "",
+											"description": "The code set as a query parameter in the `redirect_uri`.",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "",
+											"description": "The callback uri to where the user was redirected after authorization.",
+											"type": "text"
+										},
+										{
+											"key": "code_verifier",
+											"value": "",
+											"description": "The secret initially created by the application.",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "",
+											"description": "The client ID of the application that requested the token.",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "",
+											"description": "The client secret of the application that requested the token.",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/token",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"token"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d09f2554-c2c1-40ec-87e9-d7eb1841b6ce",
+									"name": "Get an access token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"description": "The type of the token grant. For user-owned applications, this parameter MUST always be `authorization_code`.",
+													"type": "text"
+												},
+												{
+													"key": "code",
+													"value": "",
+													"description": "The code set as a query parameter in the `redirect_uri`.",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "",
+													"description": "The callback uri to where the user was redirected after authorization.",
+													"type": "text"
+												},
+												{
+													"key": "code_verifier",
+													"value": "",
+													"description": "The secret initially created by the application.",
+													"type": "text"
+												},
+												{
+													"key": "client_id",
+													"value": "",
+													"description": "The client ID of the application that requested the token.",
+													"type": "text"
+												},
+												{
+													"key": "client_secret",
+													"value": "",
+													"description": "The client secret of the application that requested the token.",
+													"type": "text"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/auth/token",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"auth",
+												"token"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"name": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-store",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"access_token\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n    \"refresh_token\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\r\n    \"scope\": \"read write groups\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Revoke a token",
+							"id": "aa47b133-a63c-445c-99b9-5c58d1443d2d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "",
+											"description": "The token to revoke (access or refresh).",
+											"type": "text"
+										},
+										{
+											"key": "token_type_hint",
+											"value": "access_token",
+											"description": "The type of the token to be revoked. This parameter enables a faster lookup of the token in the database and therefore requests will be faster.\n\nThis parameter is optional. If the hint is incorrect (i.e. the token provided was a refresh token and the type hint said that it was an access token) the server will extend the lookup to all available tokens.",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/token/revoke",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"token",
+										"revoke"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "530d2e3e-2466-449c-816f-a552b1522128"
+				},
+				{
 					"name": "Get users",
 					"id": "3d821067-266c-4c7a-b690-c850eff8d47f",
 					"protocolProfileBehavior": {
@@ -4058,6 +4255,27 @@
 				}
 			],
 			"id": "387ea2a6-68b2-449c-90de-1d1effaeffde"
+		},
+		{
+			"name": "Applications",
+			"item": [
+				{
+					"name": "Get an application",
+					"id": "c1497f4c-24ea-449b-8605-5cd46cab0d75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "75bfe08b-a753-46f8-8274-67dbe3499d7a"
 		},
 		{
 			"name": "Get API details",
