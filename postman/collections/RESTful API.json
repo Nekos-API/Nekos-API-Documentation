@@ -2677,6 +2677,1098 @@
 			"id": "cc100081-7769-44ef-8481-ea1774f41e12"
 		},
 		{
+			"name": "Artists",
+			"item": [
+				{
+					"name": "Get artists",
+					"id": "890ed425-9579-4518-a4fc-33a83dacafdc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an artist",
+					"id": "901dcc5b-bc20-49d0-bd01-dc8552ead115",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an artist's images",
+					"id": "9d89db0d-1f8c-427e-af71-690545c3446a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an artist's followers",
+					"id": "b3c3d2f4-fec6-4406-8f7f-c8a7b631938a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow an artist",
+					"id": "64e1133b-b58e-435e-9a2a-a769977d4f49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow an artist",
+					"id": "5e5e8f32-048a-4513-a171-2cc7f954d2ea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an artist's image relationships",
+					"id": "d25ed89c-678f-437e-90e7-d0665c5a681a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/relationships/images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"relationships",
+								"images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an artist's follower relationships",
+					"id": "683285f4-ad92-43c9-8bb8-3e788f2be2cd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artists/:id/relationships/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artists",
+								":id",
+								"relationships",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "e83487a2-d3f1-42b8-8ad3-f140e9491dd5"
+		},
+		{
+			"name": "Characters",
+			"item": [
+				{
+					"name": "Get characters",
+					"id": "b92375c3-e0de-4f4a-8dbf-6f5c473f3f47",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a character",
+					"id": "85eae80c-2e0f-48a8-926b-37e94a1ebf5b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow a character",
+					"id": "49b2b9d5-c99a-4826-bcbc-3e637f891c40",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow a character",
+					"id": "fc58d0eb-c195-452f-b737-f197c27d6ca6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a character's images",
+					"id": "8b436186-e1a6-4461-ada9-577bd2ad337f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a character's followers",
+					"id": "669bbd61-62a3-4d6d-ab7f-e147a01304ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "57616c7b-3240-4c93-98b5-4f922f1a94ae"
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get users",
+					"id": "3d821067-266c-4c7a-b690-c850eff8d47f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get authenticated user",
+					"id": "0383132a-bc51-47d5-a06b-dc803cf11328",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/@me",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"@me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user",
+					"id": "39fb91f7-545c-446f-ace8-a3e498596d46",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a user",
+					"id": "f00099c0-d0bb-4eab-8aef-ca8e62dac7cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/@me",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"@me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a user by ID",
+					"id": "ffa27e6e-1340-4fdc-aefa-c740a132a95a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a user's avatar",
+					"id": "1a051892-6591-4fb0-8410-a79e15ca74b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"description": "The new avatar image",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/@me/avatar",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"@me",
+								"avatar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow a user",
+					"id": "51bf0948-ea8b-4fc6-aa8a-7d2b15ff467a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow a user",
+					"id": "e5494811-ff5f-41f9-a681-9dd27942be10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/follow",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's discord account",
+					"id": "91dd2cf2-8ce6-43ad-9b2c-2330ffa01dca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/discord",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"discord"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followers",
+					"id": "40b2daf0-1d7c-4d3e-82c8-639548df29cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get s user's followed users",
+					"id": "8a6a2be8-f76a-49ca-b38d-8eb7ec968393",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/following",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"following"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get s user's liked images",
+					"id": "04bac2be-b26c-4641-9532-85e36a9022cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/liked-images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"liked-images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's saved images",
+					"id": "14e21676-8c0a-45f4-a54e-0cc24685c755",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/saved-images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"saved-images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed artists",
+					"id": "c054fb14-28b1-40f9-a44c-740555f71d1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/followed-artists",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"followed-artists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed categories",
+					"id": "48bda90f-2f33-4e0e-9d34-3bad104acb62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/followed-categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"followed-categories"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed characters",
+					"id": "f2b50e8f-d73d-4c59-a831-50339af5747d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/followed-characters",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"followed-characters"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed lists",
+					"id": "778d8f76-07ee-451c-82f1-219985e0dae0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/followed-lists",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"followed-lists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's discord account relationship",
+					"id": "0f4eeddb-8c70-4b6c-b580-1ee101e7d122",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/discord",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"discord"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's follower relationships",
+					"id": "ac86fea8-3ba1-4ef1-b0dc-b53d62f49c67",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed user relationships",
+					"id": "207621c6-55d3-4544-9e83-e89d76ab31be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/following",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"following"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed artist relationships",
+					"id": "a3d44c22-a281-4c4f-b1c1-f8bb75b4ef5f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/followed-artists",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"followed-artists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed character relationships",
+					"id": "4fc782d1-34d5-4ec8-bbac-84820feab371",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/followed-characters",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"followed-characters"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed category relationships",
+					"id": "93010c2a-93a1-4582-b5d7-0499b9a7ec52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/followed-categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"followed-categories"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user's followed list relationships",
+					"id": "452bc81a-39bb-421a-852c-88f1cb005a28",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/:id/relationships/followed-lists",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								":id",
+								"relationships",
+								"followed-lists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "387ea2a6-68b2-449c-90de-1d1effaeffde"
+		},
+		{
 			"name": "Get API details",
 			"id": "dacf8d6c-6403-43bd-b3e1-1c7a94df2b57",
 			"protocolProfileBehavior": {
