@@ -3074,6 +3074,66 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get a character's image relationships",
+					"id": "6f8d66be-8f39-436c-8958-b2d2b60292e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/relationships/images",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"relationships",
+								"images"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a character's follower relationships",
+					"id": "c386292e-108e-498b-b8ca-211596953adb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/characters/:id/relationships/followers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"characters",
+								":id",
+								"relationships",
+								"followers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "57616c7b-3240-4c93-98b5-4f922f1a94ae"
